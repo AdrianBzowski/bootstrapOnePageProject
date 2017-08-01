@@ -1,0 +1,46 @@
+/*PORTFOLIO + MASKA !*/
+
+#portfolio {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+#portfolio .single-portfolio-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+#portfolio .portfolio-image-container {
+    height: 300px;
+    overflow:hidden;
+}
+#portfolio .portfolio-image-container .portfolio-image  {
+    height: 100%;
+    background-size: cover;
+    background-position: left;
+    transition: all 0.5s;
+}
+#portfolio .portfolio-image-container .portfolio-image:hover  {
+    transform:scale(1.2);
+}
+
+#portfolio-item-1 {
+    
+    background-image: url(../img/port2.jpeg);
+}
+#portfolio .portfolio-image-container .portfolio-image .portfolio-image-mask {
+    background-color: rgba(100,200,200,0.6);
+    height: 100%;
+    opacity:0;
+    position: relative;
+}
+#portfolio .portfolio-image-container .portfolio-image .portfolio-image-mask:hover {
+    opacity:1;
+}
+#portfolio .portfolio-image-container .portfolio-image .portfolio-image-mask .fa {
+    position: absolute;
+    color:#fff;
+    font-size: 3em;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    transition: all .3s;
+}
